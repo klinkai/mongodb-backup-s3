@@ -9,6 +9,10 @@ endpoint = awscli_plugin_endpoint
 and add a profile following instructions in https://github.com/wbinglee/awscli-plugin-endpoint.
 Finally add a AWS_PROFILE env var with profile name
 
+## Docker Image
+
+https://hub.docker.com/r/klinkbr/mongodb-backup-s3-multi
+
 ## Usage:
 
 ```
