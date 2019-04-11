@@ -1,6 +1,13 @@
-# mongodb-backup-s3
+# mongodb-backup-s3-multi
 
-This image runs mongodump to backup data using cronjob to an s3 bucket
+This image runs mongodump to backup MongoDB 4.0 using awscli-plugin-endpoint to work with any providers.
+Just map a config file in /root/.aws/config 
+adding with content: ```
+[plugins]
+endpoint = awscli_plugin_endpoint
+```
+and add a profile following instructions in https://github.com/wbinglee/awscli-plugin-endpoint.
+Finally add a AWS_PROFILE env var with profile name
 
 ## Usage:
 
